@@ -1,0 +1,164 @@
+/*general */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+}
+.wrapper {
+   /*width: 75%;*/
+    margin: 0 12.5%;
+   
+}
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    margin: -1px;
+}
+/*end general */
+
+
+.site-header {
+    background: #9E3B3B;
+}
+.site-header .wrapper {
+    background-image: url(../img/cte.png);
+    background-repeat: no-repeat;
+    background-position: right 167px;
+        
+    padding-top: 85px;
+    padding-bottom: 170px;
+}
+.site-header .wrapper 1 {
+    background-image: url(../img/belaja-koshka.png);
+    background-repeat: no-repeat;
+    background-position: right 214px;
+        
+    padding-top: 85px;
+    padding-bottom: 81px;
+}
+.main-nav {
+    display: flex;
+    margin-bottom: 110px;
+}
+.logo {
+    margin-right: 102px;
+    
+}
+img {
+    width: 64px;
+    height: 65px;
+}
+ul {
+    list-style: none;
+}
+.site-menu {
+    display: flex;
+    align-items: center;
+}
+.site-menu a {
+    text-decoration: none;
+    display: block;
+    color: #FFFFFF;
+    margin-right: 46px;
+}
+/*.site-menu li>a:last-child>a {
+    margin-right: 0;
+}
+/*contact menu */
+.contact-menu{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    column-gap: 27px;
+}
+.contact-menu .icon {
+    width: 17px;
+    height: 17px;
+    display: block;
+}
+.contact-menu .icon-mail {
+    background: url("../img/icon-mail1.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    }
+.contact-menu .icon-phone {
+    background: url(../img/icon-phone1.png);
+}
+/* end contact menu */
+.about-us {
+    width: 240px;
+    padding-left: 124px;
+}
+.about-us h1 {
+    font-family: 'Inter';
+    line-height: 54px;
+    font-size: 45px;
+    margin-bottom: 39px;
+}
+.about-us p {
+    margin-bottom: 74px;
+}
+.btn {
+    display: inline-block;
+    position: relative;
+    text-decoration: none ;
+    text-transform: uppercase;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 15px 60px;
+    padding-right: 90px;
+}
+.btn::after {
+    content: "";
+
+    position: absolute;
+    width: 19px;
+    height: 16px;
+    right: 13px;
+    background: url(../img/right-arrow-dark\ 1.jpg);
+    }
+.btn-yellow {
+    background-color: #FFCB06;
+}
+.advantage {
+    background-color: #9A2525; 
+    padding: 90px 0;
+}
+.advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50 px 80px;
+}
+.advantage-list li {
+    padding-top: 80px;
+    width: 150px;
+}
+.advantage-list li::after {
+    content: "";
+    width: 75px;
+    height: 65px;
+
+    position: absolute;
+}
+.advantage-made {
+    background: url("../img/images1.png") no-repeat;
+}
+.advantage-food {
+    background: url("../img/images2.png") no-repeat;
+}
+.advantage-pilot {
+    background: url("../img/images3.png") no-repeat;
+}
+.advantage-rover {
+    background: url("../img/images4.png") no-repeat;
+}
