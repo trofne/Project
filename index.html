@@ -21,11 +21,11 @@
                     </ul>
                     <ul class="contact-menu">
                         <li>
-                            <a href="#" class="icon icon-mail">
+                            <a href="mailto" class="icon icon-mail">
                                 <span class="hidden">написать нам</span>
                             </a>
                         </li>
-                        <li> <a href="#" class="icon icon-phone">
+                        <li> <a href="tel:" class="icon icon-phone">
                             <span class="hidden">позвонить нам</span>
                         </a>
                     </li>
@@ -40,7 +40,7 @@
                         Интернет магазин для домашних животных. <br>
                         Лучшее вашим любимцам!  
                     </p>
-                    <a href="#"class="btn btn-yellow">Каталог</a>
+                    <a href="#vacation-request"class="btn btn-yellow">Каталог</a>
                 </section>
             </div>
         </header>
@@ -51,15 +51,15 @@
                 <div class="wrapper">
                     <ul class="advantage-list">
                         <li class="advantage-made">
-                            Вкусный и полезный
-                            корм для животных
+                            Вкусный и <br> полезный
+                            корм <br> для животных
                         </li>
                         <li class="advantage-food">
-                            Вкусняшки
+                            Лакомства
                         </li>
                         <li class="advantage-pilot">
-                            Лежаки
-                            миски
+                            Лежаки <br>
+                            миски <br>
                             поилки
                         </li>
                         <li class="advantage-rover">
@@ -70,18 +70,162 @@
             </section>
             <section class="content">
                 <div class="wrapper column-container">
-                    <div class="left-column"></div>
-                    <div class="right-column"></div>
+                    <div class="left-column">
+                        <img src="img/Снимок 1.png" alt="Карта">
+                    </div>
+                    <div class="right-column">
+                        <h3>
+                            Мы сотрудничаем с ветеринарными 
+                            клиниками
+                        </h3>
+                        <p class="lead">                                         
+                        <p><strong>22 сентября 2022 года</strong> в Петербурге открылись
+                            Центры ветеринарной офтальмологии и стоматологии. 
+                            Это очередной значимый этап в развитии государственной 
+                            ветеринарной службы нашего города.
+                            Открытие Центра ветеринарной офтальмологии и Центра ветеринарной  стоматологии является для владельцев животных очень востребованным событием. Как показала практика работы, количество обращений с проблемами, связанными со зрением и состоянием зубов и ротовой полости питомцев в последнее время значительно выросло.
+                            Статистика приема пациентов показывает, что более 60% домашних питомцев страдают различными заболеваниями, связанными со зрением и состоянием зубов и полости рта.
+                        </p>
+                    </div>
+                </div>
+                <div class="wrapper column-container">
+                    <div class="left-column">
+                        <h3>Центр ветеринарной офтальмологии и 
+                            стомотологии открылись в Санкт-Петербурге</h3>
+                        <ul class="recomendation-list">
+                            <li><strong>Ветеринарная медицина</strong> сегодня по многим показателям соответствует человеческой. Это касается и ветеринарной офтальмологии и стоматологии. Успешное лечение самых сложных заболеваний: например, катаракты путем <br> вживления искусственного хрусталика или дентальная имплантация, внедрение различных типов имплантатов. <br> Все это элементы современной практики ветврачей.
+                            </li>
+                        </ul>
+                        </div>
+                    <div class="right-column">
+                        <h3>Современные Центры</h3>
+                        <ul class="recomendation-list">
+                            <li>Центры будут работать в составе Санкт-Петербургской горветстанции.
+                             Они оснащены <strong>современным оборудованием</strong>. Есть смотровые и операционные с дневным стационаром, где животные могут размещаться до и после операций. Персонал прошел дополнительное обучение по освоению новых технологий лечения. Здесь животным будут оказывать специализированную и высокотехнологичную помощь.
+                        </li>
+                    </div>
                 </div>
             </section>
-            <section>
-                <div class="wrapper"></div>
+            <section class="vacation-request" id="vacation-request">
+                <div class="wrapper column-container">
+                    <h2 class="hidden">Заявка</h2>
+                    <div class="left-column">
+                        <h3 class="lead">Вы готовы записать <br> питомца на обследование?</h3>
+                        <p>
+                            Отправьте заявку, заполнив форму справа,<br>
+                            мы свяжемся с вами в течении 2 часов. 
+                        </p>
+                    </div>
+                    <div class="right-column">
+                        <form action="mailto:" class="vacation-form">
+                            <div>
+                                <label for="name" class="hidden">ФИО</label>
+                                <input type="text" name="name" id="name"placeholder="ФИО">
+                            </div>
+                            <div>
+                                <label for="phone" class="hidden">Контактный телефон</label>
+                                <input type="tel" name="phone" id="phone"placeholder="Контактный телефон">
+                            </div>
+                            <div class="half-field">
+                                <label for="height" class="hidden">Рост</label>
+                                <input type="text" name="height" id="height"placeholder="Рост">
+                            </div>
+                            <div class="half-field">
+                                <label for="weight" class="hidden">Вес</label>
+                                <input type="text" name="weight" id="weight"placeholder="Вес">
+                            </div>
+                            <div>
+                                <input class = "hidden" type="checkbox" name="agreement" id="agreement">
+                                <label for="agreement">Согласен(а) наобработку персональных данных</label>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-black">ОТПРАВИТЬ</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
             </section>
-            <section >
-                <div class="wrapper"></div>
-            </section>
-        
-        </main>
-        <footer class="site-footer"></footer>
+            <section class="timetable">
+                <div class="wrapper">
+                    <div class="timetable-info">
+                        <h2>
+                            Наши услуги
+                        </h2>
+                        <p>
+                            Для вашего удобства мы разработали график предоставления услуг в центре.
+                            Вы также можете заказать <a href="#"target="_blank">здоровое питание для вашего любимца</a>.
+                        </p>
+                    </div>
+                </div>
+                <table class="timetable-fligts">
+                    <thead>
+                        <tr>
+                            <th>Прием</th>
+                            <th>Название  отделения</th>
+                            <th>Прием</th>
+                            <th>Название отделения</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>с 9.00 до 21.00</td>
+                            <td>Офтальмологическое  обследование</td>
+                            <td>с 9.00  до 24.00</td>
+                            <td>Хирургическое лечение</td>
+                        </tr>
+                        <tr>
+                            <td>с 10.00 до 20.00</td>
+                            <td>Стоматология</td>
+                            <td>с 9.00 до 20.00</td>
+                            <td>Терапевтическое лечение</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+     </main>
+        <footer class="site-footer">
+        <div class="wrapper footer-columns">
+            <div class="left-column">
+                <div class="logo-container">
+                    <a href="#"class="logo">
+                        <img src="img/img-logo1.png" alt="Space-Z">
+                    </a>
+                    <p class="company-title">Space-Z</p>
+                </div>
+                    <p class="copyright">
+                        ООО “Степашка”<br>
+                        Все права защищены.
+                    </p>
+                </div>
+                <div class="right-column">
+                    <nav class="footer-menu">
+                        <a href="#"class="footer-submenu-title">КОМПАНИЯ</a>
+                        <ul class="footer-submenu">
+                            <li><a href="#">История</a></li>
+                            <li><a href="#">Миссия</a></li>
+                            <li><a href="#">Команда</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-menu">
+                        <a href="#"class="footer-submenu-title">КАТАЛОГ</a>
+                        <ul class="footer-submenu">
+                            <li><a href="#">Продукция</a></li>
+                            <li><a href="#">Ветеринарные</a></li>
+                            <li><a href="#">клиники</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-menu">
+                        <a href="#"class="footer-submenu-title">КОНТАКТЫ</a>
+                        <ul class="footer-submenu">
+                            <li><a href="#">Отправить заявку</a></li>
+                            <li><a href="#">Схема проезда</a></li>
+                            <li><a href="#">Время работы</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

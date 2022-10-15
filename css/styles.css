@@ -35,14 +35,6 @@ body {
     padding-top: 85px;
     padding-bottom: 170px;
 }
-.site-header .wrapper 1 {
-    background-image: url(../img/belaja-koshka.png);
-    background-repeat: no-repeat;
-    background-position: right 214px;
-        
-    padding-top: 85px;
-    padding-bottom: 81px;
-}
 .main-nav {
     display: flex;
     margin-bottom: 110px;
@@ -162,3 +154,137 @@ ul {
 .advantage-rover {
     background: url("../img/images4.png") no-repeat;
 }
+.content {
+    color: black;
+    padding: 130px 0 63px;
+}
+.column-container {
+    display: flex;
+    gap:  10px 80px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.left-column, .right-column {
+    max-width: 480px;
+}
+.content p {
+    margin-top: 25px;
+}
+.lead {
+    font-family:'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.content .lead {
+    margin: 0 0 20px;
+}
+.recomendation-list li,.right-column {
+    padding: 25px 25px 0px 0px;
+}
+.content .wrapper:first-child {
+    margin-bottom: 20px;
+}
+.left-column img {
+    width: 440px;
+    height: 289px;
+    padding: 30px 0px;
+} 
+/*.content p .right-column {
+    width: 416px;
+    height: 200px;
+}*/
+/*start form */
+.vacation-request {
+    padding: 100px 0 70px;
+    color:#000;
+    background-color: #F0F0F0;
+}
+.vacation-request .lead {
+    margin-bottom: 60px;
+    padding-right: 160px;
+}
+.vacation-request p, .vacation-request .lead {
+    width: 340px;
+}
+.vacation-form  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    column-gap: 10px;
+}
+.vacation-form div {
+    width: 100%;
+}
+.vacation-form input[type ="tel"],.vacation-form input[type ="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 17px 23px 17px 23px;
+}
+.vacation-form .half-field {
+    width: 49%;
+}
+.vacation-form input[type ="checkbox"] {
+   position: absolute;
+   opacity: 0;
+   z-index: -1;
+}
+.vacation-form input[type ="checkbox"] ~ label::before {   
+    content: "\2713";
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25px;
+    height: 25px;
+    
+    color: #FFF;
+    font-weight: bold;
+    background: #FFFFFF;
+
+    margin-right: 1em;
+    border: 1px solid #FFF;
+}
+.vacation-form input[type ="checkbox"]:checked ~ label::before {
+    color: #000;
+}
+.btn-black {
+    color: #FFFFFF;
+    background-color: #222222;
+}
+.btn::after {
+    background: url(../img/right-arrow-white\ 1.png) no repeat;
+}
+.timetable {
+    background-color: #9E3B3B;
+    padding: 84px 0;
+}
+.timetable-info {
+    display: flex;
+    margin-bottom: 73px;
+}
+.timetable-info h2 {
+    color: #FECA30;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    
+
+
+    
+
+
+
+
+
+
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+/* end form */
+
