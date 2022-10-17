@@ -1,0 +1,39 @@
+.site-menu a:hover, .footer-menu a:hover {
+    color: #FFCB06;
+}
+.site-menu a:active, .footer-menu a:active {
+    color: #e22222;
+}
+.vacation-form [type="text"]:focus, .vacation-form [type="tel"]:focus {
+    border-color: #e22222;
+    outline-color: #e22222;
+}
+.vacation-form [type="text"]:hover, .vacation-form [type="tel"]:hover {
+    color: #222;
+}
+.vacation-form[placeholder]::placeholder {
+    color: #000;
+}
+.vacation-form[placeholder]:hover::placeholder {
+    color: aqua;
+}
+.vacation-form [type="checkbox"]:not(:disabled):not(:checked) ~ label:hover::before {
+    background-color: #FFCB06;
+}
+.vacation-form [type="checkbox"]:not(:disabled):not(:checked) ~ label:hover::before {
+    border-color: #FFCB06;
+}
+.btn-yellow:hover{
+   box-shadow: 10px 5px 5px #d4eea7;
+} 
+.btn-black:hover {
+    box-shadow: 10px 5px 5px #d4eea7;
+}
+.timetable-info a:hover {
+    color: #d4eea7;
+    /*box-shadow: 5px 3px 3px #d4eea7;*/
+    filter: drop-shadow(5px 3px 3px #FFCB06);
+}
+.about-us {
+    filter: drop-shadow(5px 5px 5px #a62828);
+}

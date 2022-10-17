@@ -355,4 +355,10 @@ ul {
     text-decoration: none;
     color: #888888;
 }
+.site-menu a:hover, .footer-menu a:hover {
+    color: #FFCB06;
+}
+.site-menu a:active, .footer-menu a:active {
+    color: #e22222;
+}
 
