@@ -1,0 +1,38 @@
+/*@media (max-width:1280px) { /*если убираем картинку с шапки в CSS*/
+   /* .site-header .wrapper {
+        background-image: url(../img/cte.png);
+        background-repeat: no-repeat;
+        background-position: right 167px;
+    }
+}*/
+@media (max-width:1024px) {
+    .wrapper {
+        width: 85%;
+    } 
+    .content .column-container:first-child {
+        flex-direction:column;
+    }
+}
+@media (max-width:960px){
+    .footer-columns .right-column {
+        column-gap: 20px;
+    }
+    .vacation-request .column-container {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 768px) {
+    .column-containe {
+        flex-wrap: wrap;
+    }
+    .content .left-column img {
+        width: 300px;
+        height: auto;
+    }
+    .content .column-container:first-child {
+        flex-direction: column-reverse; 
+    }
+    .footer-columns {
+        flex-direction: column-reverse;
+    }
+}
