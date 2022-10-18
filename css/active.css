@@ -34,6 +34,15 @@
     /*box-shadow: 5px 3px 3px #d4eea7;*/
     filter: drop-shadow(5px 3px 3px #FFCB06);
 }
+.timetable-info h2:hover {
+    transform: scale(1.3);
+}
 .about-us {
     filter: drop-shadow(5px 5px 5px #a62828);
+}
+.icon:hover{
+    transform: scale(1.5);
+}
+.logo:hover {
+    transform:scale(1.5); 
 }
