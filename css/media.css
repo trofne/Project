@@ -1,10 +1,10 @@
-/*@media (max-width:1280px) { /*если убираем картинку с шапки в CSS*/
-   /* .site-header .wrapper {
+@media (max-width:1280px) { /*если убираем картинку с шапки в CSS*/
+    .site-header .wrapper {
         background-image: url(../img/cte.png);
         background-repeat: no-repeat;
         background-position: right 167px;
     }
-}*/
+}
 @media (max-width:1024px) {
     .wrapper {
         width: 85%;
@@ -35,4 +35,62 @@
     .footer-columns {
         flex-direction: column-reverse;
     }
+    .contact-menu {
+        margin: 0;
+        justify-content: center;
+    }
+    .site-menu, .contact-menu {
+        visibility: hidden;
+    }
+    .main-nav {
+        flex-direction: column;
+    }
+    .toggle-btn { /*стилизуем кнопку*/
+        position: absolute;
+        right: 7,5%;
+        top: 100px;
+        width: 26px;
+        cursor: pointer;
+    } 
+    /*добавляем гамбургер*/
+    .toggle-btn > span, 
+    .toggle-btn > span::before,
+    .toggle-btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 2px;
+        background-color: #FFCB06;
+    }
+    .toggle-btn > span::before {
+        content: "";
+        top: -8px;
+    }
+    .toggle-btn > span::after {
+        content: "";
+        top: 8px;
+    }
+    /*конец добавления гамбургера*/
+
+    /*cтилизуем бутербродик при открытии и закрытии*/
+    #nav-toggle:checked ~ .toggle-btn > span {
+        transform: rotate(45deg);
+    }
+    #nav-toggle:checked ~ .toggle-btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #nav-toggle:checked ~ .toggle-btn > span::after{
+        top: 0;
+        transform: rotate(90deg);
+    }
+    /*стилизуем блок меню при открытии*/
+    #nav-toggle:checked ~ .site-menu {
+        flex-direction: column;
+        row-gap: 40px;
+        visibility: visible;
+    }
+}   #nav-toggle:checked ~ .contact-menu {
+        visibility: visible;
 }
+
