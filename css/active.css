@@ -58,5 +58,6 @@
 }
 .logo:hover {
     transform:scale(1.5);
+    transition-duration: 3s;/*замедленность*/
     /*transform:skew(30deg) rotate(30deg);поворот искажения*/
 }

@@ -1,8 +1,9 @@
-@media (max-width:1280px) { /*если убираем картинку с шапки в CSS*/
+@media (min-width:1280px) { /*если убираем картинку с шапки в CSS*/
     .site-header .wrapper {
         background-image: url(../img/cte.png);
         background-repeat: no-repeat;
         background-position: right 167px;
+        
     }
 }
 @media (max-width:1024px) {
@@ -12,34 +13,37 @@
     .content .column-container:first-child {
         flex-direction:column;
     }
+    .content .column-container:first-child right-column {
+        max-width: none;
+    }
 }
 @media (max-width:960px){
     .footer-columns .right-column {
-        column-gap: 20px;
+        column-gap: 20px;/*размер колонок уменьшается при сжатии*/
     }
     .vacation-request .column-container {
-        flex-wrap: wrap;
+        flex-wrap: wrap;/*перестроение левой надписи - над формой при зжатии*/
     }
 }
 @media (max-width: 768px) {
     .column-container {
-        flex-wrap: wrap;
+        flex-wrap: wrap;/*все контейнеры переносятся при сжатии*/
     }
-    .content .left-column img {
-        width: 300px;
+    .content .left-column img {/*сжать карту*/
+        width: 370px;
         height: auto;
     }
     .content .column-container:first-child {
-        flex-direction: column-reverse; 
+        flex-direction: column-reverse; /*при расширении экрана карта спускается ниже текста*/
     }
     .footer-columns {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse;/*изменить направление главной оси*/
     }
     .contact-menu {
         margin: 0;
         justify-content: center;
     }
-    .site-menu, .contact-menu {
+    .site-menu, .contact-menu {/*меняем кнопки иеню на бутерброд*/
         visibility: hidden;
     }
     .main-nav {
@@ -47,7 +51,7 @@
     }
     .toggle-btn { /*стилизуем кнопку*/
         position: absolute;
-        right: 7,5%;
+        right: 5%;
         top: 100px;
         width: 26px;
         cursor: pointer;
@@ -59,7 +63,7 @@
         display: block;
         position: absolute;
         width: 100px;
-        height: 2px;
+        height: 3px;
         background-color: #FFCB06;
     }
     .toggle-btn > span::before {
@@ -74,7 +78,7 @@
 
     /*cтилизуем бутербродик при открытии и закрытии*/
     #nav-toggle:checked ~ .toggle-btn > span {
-        transform: rotate(45deg);
+        transform: rotate(45deg);/*переворачиваю палки*/
     }
     #nav-toggle:checked ~ .toggle-btn > span::before {
         top: 0;
@@ -82,15 +86,14 @@
     }
     #nav-toggle:checked ~ .toggle-btn > span::after{
         top: 0;
-        transform: rotate(90deg);
+        transform: rotate(90deg);/*переворачиваю палки*/
     }
     /*стилизуем блок меню при открытии*/
     #nav-toggle:checked ~ .site-menu {
         flex-direction: column;
-        row-gap: 40px;
         visibility: visible;
     }
-}   #nav-toggle:checked ~ .contact-menu {
+     #nav-toggle:checked ~ .contact-menu {
         visibility: visible;
+    }
 }
-
