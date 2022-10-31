@@ -1,35 +1,48 @@
-.site-menu a:hover, .footer-menu a:hover {
+.site-menu a:hover, .footer-menu a:hover { /*подсветка букв в меню при наведении и в футере */
     color: #FFCB06;
 }
-.site-menu a:active, .footer-menu a:active {
+.site-menu a:active, .footer-menu a:active { /*подсветка букв в меню и в футере при нажатии  */
     color: #e22222;
 }
-.vacation-form [type="text"]:focus, .vacation-form [type="tel"]:focus {
+.vacation-form [type="text"]:focus, .vacation-form [type="tel"]:focus {/*подсветка внешней линии в форме при нажатии*/
     border-color: #e22222;
     outline-color: #e22222;
 }
-.vacation-form [type="text"]:hover, .vacation-form [type="tel"]:hover {
-    color: #222;
+.vacation-form [type="text"]:not(:disabled):hover, .vacation-form [type="tel"]:not(:disabled):hover {/*подсветка напечатанных букв в форме при наведении*/
+    color:#e22222;
 }
 .vacation-form[placeholder]::placeholder {
     color: #000;
 }
-.vacation-form[placeholder]:hover::placeholder {
-    color: aqua;
+.vacation-form [placeholder]:hover::placeholder {/*подсветка букв в форме при наведении*/
+    color: rgb(81, 159, 13);
 }
-.vacation-form [type="checkbox"]:not(:disabled):not(:checked) ~ label:hover::before {
+.vacation-form [type="checkbox"]:not(:disabled):not(:checked) ~ label:hover::before { /*подсветка галочки в форме при наведении*/
     background-color: #FFCB06;
 }
-.vacation-form [type="checkbox"]:not(:disabled):not(:checked) ~ label:hover::before {
-    border-color: #FFCB06;
+.vacation-form [type="checkbox"]:not(:disabled):checked ~ label:hover::before {/*подсветка нажатой галочки в форме при наведении*/
+    border-color: #e22222;
 }
 .btn-yellow:hover{
-   box-shadow: 10px 5px 5px #d4eea7;
+   box-shadow: 10px 5px 5px #d4eea7;/*тень от кнопки в меню*/
+   background-color: rgb(149, 197, 149);/*кнопка в меню меняет цвет при наведении*/
 } 
-.btn-black:hover {
+/*.btn-yellow:hover{ /*тень от кнопки в меню
+    box-shadow: 60px -16px teal;
+ } 
+ .btn-yellow:hover{/*тень от кнопки в меню
+    box-shadow: 12px 12px 2px 1px #d4eea7;
+ } 
+ .btn-yellow:hover{/*тень от кнопки в меню
+    box-shadow: inset 5em 1em rgb(251, 250, 247);
+ } 
+ .btn-yellow:hover{/*тень от кнопки в меню
+    box-shadow: 3px 3px red, -1em 0 .4em rgb(251, 251, 250);
+ } */
+.btn-black:hover {/*тень от кнопки*/
     box-shadow: 10px 5px 5px #d4eea7;
 }
-.timetable-info a:hover {
+.timetable-info a:hover { /*тень  и свечение в футере при наведении на текст.ссылку*/
     color: #d4eea7;
     /*box-shadow: 5px 3px 3px #d4eea7;*/
     filter: drop-shadow(5px 3px 3px #FFCB06);
@@ -40,9 +53,10 @@
 .about-us {
     filter: drop-shadow(5px 5px 5px #a62828);
 }
-.icon:hover{
+.icon:hover{/*увеличение верхних иконок при наведении на них*/
     transform: scale(1.5);
 }
 .logo:hover {
-    transform:scale(1.5); 
+    transform:scale(1.5);
+    /*transform:skew(30deg) rotate(30deg);поворот искажения*/
 }

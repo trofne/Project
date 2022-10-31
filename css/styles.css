@@ -339,20 +339,13 @@ ul {
     color: #F0F0F0;
     text-transform: uppercase;
     text-decoration: none;
-    border-bottom: 1px solid #9E3B3B;
+    border-bottom: 1px solid #9E3B3B; /*нижнее подчеркивание слов в футере*/
 }
 .footer-submenu >li {
-    
     margin-bottom: 20px;
 }
 .footer-submenu a {
     text-decoration: none;
     color: #888888;
-}
-.site-menu a:hover, .footer-menu a:hover {
-    color: #FFCB06;
-}
-.site-menu a:active, .footer-menu a:active {
-    color: #e22222;
 }
 

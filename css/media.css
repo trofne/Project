@@ -22,7 +22,7 @@
     }
 }
 @media (max-width: 768px) {
-    .column-containe {
+    .column-container {
         flex-wrap: wrap;
     }
     .content .left-column img {
