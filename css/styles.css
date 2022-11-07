@@ -1,7 +1,12 @@
 /*general */
+@import url(`https://fonts.googleapis.com/css2?family=Caveat&display=swar`);
 * {
     margin: 0;
     padding: 0;
+}
+@font-fase {
+    font-family: Pang; /*имя шрифта*/
+    src: url("https://fonts/Pangolin-Regular.ttf"); /*путь к файлу со шрифтом*/
 }
 body {
     font-size: 14px;
@@ -10,8 +15,8 @@ body {
     color: #FFFFFF;
 }
 .wrapper {
-   /*width: 75%;*/
-    margin: 0 12.5%;
+   width: 75%;
+    margin: 0 auto;
 }
 .hidden {
     position: absolute;
@@ -28,16 +33,16 @@ body {
     background: #9E3B3B;
 }
 .site-header .wrapper {
-    background-image: url(../img/cte.png);
+    background-image: url(../img/cte.png);/*можно убрать background и картинка при сжатии исчезнет - в мобильном приложении, т. к.background перересла в media*/
     background-repeat: no-repeat;
     background-position: right 167px;
         
-    padding-top: 85px;
-    padding-bottom: 170px;
+    padding-top: 54px;
+    padding-bottom: 180px;
 }
 .main-nav {
     display: flex;
-    margin-bottom: 110px;
+    margin-bottom: 115px;
 }
 .logo {
     margin-right: 102px;
@@ -75,16 +80,14 @@ ul {
     display: block;
 }
 .contact-menu .icon-mail {
-    background: url("../img/icon-mail1.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    }
+    background: url("../img/icon-mail1.png") no-repeat;
+}
 .contact-menu .icon-phone {
-    background: url(../img/icon-phone1.png);
+    background: url(../img/icon-phone1.png) no-repeat;
 }
 /* end contact menu */
 .about-us {
-    width: 240px;
+    width: 244px;
     padding-left: 124px;
 }
 .about-us h1 {
@@ -92,9 +95,13 @@ ul {
     line-height: 54px;
     font-size: 45px;
     margin-bottom: 39px;
+    color: #FFF;
 }
 .about-us p {
     margin-bottom: 74px;
+}
+.about-us {
+    
 }
 .btn {
     display: inline-block;
@@ -115,7 +122,7 @@ ul {
     width: 19px;
     height: 16px;
     right: 13px;
-    background: url(../img/right-arrow-dark\ 1.jpg);
+    background: url(../img/right-arrow-dark\ 1.jpg) no-repeat;
     }
 .btn-yellow {
     background-color: #FFCB06;
@@ -133,6 +140,7 @@ ul {
 .advantage-list li {
     padding-top: 80px;
     width: 150px;
+    position: relative;
 }
 .advantage-list li::after {
     content: "";
@@ -140,17 +148,19 @@ ul {
     height: 65px;
 
     position: absolute;
+    top: 0;
+    left: 0;
 }
-.advantage-made {
+.advantage-made::after {
     background: url("../img/images1.png") no-repeat;
 }
-.advantage-food {
+.advantage-food::after {
     background: url("../img/images2.png") no-repeat;
 }
-.advantage-pilot {
+.advantage-pilot::after {
     background: url("../img/images3.png") no-repeat;
 }
-.advantage-rover {
+.advantage-rover::after {
     background: url("../img/images4.png") no-repeat;
 }
 .content {
@@ -169,12 +179,36 @@ ul {
 .content p {
     margin-top: 25px;
 }
+/*.lead {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+}*/
 .content .lead {
     margin: 0 0 20px;
 }
-.recomendation-list li,.right-column {
-    padding: 25px 25px 0px 0px;
+.recomendation-list {
+    padding-top: 20px;
 }
+/*.recomendation-list li,.right-column {
+    padding: 25px 25px 0px 0px;
+}*/
+/*.recomendation-list li {
+    margin-bottom: 28px;
+    position: relative;
+}
+.recomendation-list li::before {
+    content: "";
+    background: #FFCB06;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: -23px;
+    top: 4px;
+}*/
 .content .wrapper:first-child {
     margin-bottom: 20px;
 }
@@ -197,7 +231,7 @@ ul {
     margin-bottom: 60px;
     padding-right: 160px;
 }
-.vacation-request p, .vacation-request .lead {
+.vacation-request p, /*.vacation-request .lead*/ {
     width: 340px;
 }
 .vacation-form  {
@@ -210,7 +244,7 @@ ul {
 .vacation-form div {
     width: 100%;
 }
-.vacation-form input[type ="tel"],.vacation-form input[type ="text"] {
+.vacation-form input[type ="tel"], .vacation-form input[type ="text"] {
     box-sizing: border-box;
     width: 100%;
     padding: 17px 23px 17px 23px;
@@ -267,7 +301,6 @@ ul {
     line-height: 29px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 160px;
-    
 }
 .timetable-info p {
     margin-left: auto;
@@ -279,6 +312,7 @@ ul {
 .timetable-fligts {
     width: 100%;
     border-collapse: collapse;
+  
 }
 .timetable-fligts tr {
     border-bottom: 1px solid #555555;
@@ -336,7 +370,8 @@ ul {
     margin-bottom: 50px;
     padding-bottom: 20px;
     font-size: 14px;
-    color: #F0F0F0;
+    color: #111111;
+    /*color: #F0F0F0;*/
     text-transform: uppercase;
     text-decoration: none;
     border-bottom: 1px solid #9E3B3B; /*нижнее подчеркивание слов в футере*/
@@ -348,4 +383,6 @@ ul {
     text-decoration: none;
     color: #888888;
 }
-
+/*.timetable-fligts{ /*шрифт в таблице курсив*
+    font-family: 'Caveat', cursive;
+}*/

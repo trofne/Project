@@ -1,28 +1,30 @@
-@media (min-width:1280px) { /*если убираем картинку с шапки в CSS*/
+@media (min-width:1280px) { /*если убираем картинку с шапки в CSS 35пункт*/
     .site-header .wrapper {
         background-image: url(../img/cte.png);
         background-repeat: no-repeat;
         background-position: right 167px;
-        
-    }
+        }
+        .timetable-info h2 {
+            font-family: Pang, cursive;
+        }
 }
 @media (max-width:1024px) {
     .wrapper {
-        width: 85%;
+        width: 85%;/*отступы по краям при сужении*/
     } 
-    .content .column-container:first-child {
-        flex-direction:column;
+    .content .column-container:first-child {/*псевдо класс*/
+        flex-direction:column; /*меняем направление главной оси - контейнеры в колонку*/
     }
-    .content .column-container:first-child right-column {
+    .content .column-container:first-child .right-column {
         max-width: none;
     }
 }
-@media (max-width:960px){
+@media (max-width: 960px) {
     .footer-columns .right-column {
         column-gap: 20px;/*размер колонок уменьшается при сжатии*/
     }
     .vacation-request .column-container {
-        flex-wrap: wrap;/*перестроение левой надписи - над формой при зжатии*/
+        flex-wrap: wrap;/*перестроение левой надписи - над формой при сжатии*/
     }
 }
 @media (max-width: 768px) {
@@ -30,8 +32,14 @@
         flex-wrap: wrap;/*все контейнеры переносятся при сжатии*/
     }
     .content .left-column img {/*сжать карту*/
-        width: 370px;
+        width: 300px;
         height: auto;
+    }
+    .site-header .about-us { /*надпись "Зоомаркет Степашка" подвинута влево*/
+        margin-left: -60px;
+    }
+    .timetable-fligts:first-child {
+        flex-direction: column-reverse;
     }
     .content .column-container:first-child {
         flex-direction: column-reverse; /*при расширении экрана карта спускается ниже текста*/
@@ -43,17 +51,17 @@
         margin: 0;
         justify-content: center;
     }
-    .site-menu, .contact-menu {/*меняем кнопки иеню на бутерброд*/
+    .site-menu, .contact-menu {/*меняем кнопки меню на бутерброд,т.е.отключаем*/
         visibility: hidden;
     }
     .main-nav {
         flex-direction: column;
     }
-    .toggle-btn { /*стилизуем кнопку*/
+    .toggle-btn  { /*стилизуем кнопку*/
         position: absolute;
-        right: 5%;
-        top: 100px;
-        width: 26px;
+        right: 25%;
+        top: 50px;
+        width: 36px;
         cursor: pointer;
     } 
     /*добавляем гамбургер*/
@@ -62,16 +70,17 @@
     .toggle-btn > span::after {
         display: block;
         position: absolute;
-        width: 100px;
+        
+        width: 30px;
         height: 3px;
         background-color: #FFCB06;
     }
     .toggle-btn > span::before {
-        content: "";
+        content: '';
         top: -8px;
     }
     .toggle-btn > span::after {
-        content: "";
+        content: '';
         top: 8px;
     }
     /*конец добавления гамбургера*/
@@ -84,16 +93,17 @@
         top: 0;
         transform: rotate(0);
     }
-    #nav-toggle:checked ~ .toggle-btn > span::after{
+    #nav-toggle:checked ~ .toggle-btn > span::after {
         top: 0;
         transform: rotate(90deg);/*переворачиваю палки*/
     }
     /*стилизуем блок меню при открытии*/
     #nav-toggle:checked ~ .site-menu {
         flex-direction: column;
+        row-gap: 40px;
         visibility: visible;
     }
-     #nav-toggle:checked ~ .contact-menu {
+    #nav-toggle:checked ~ .contact-menu {
         visibility: visible;
     }
 }
