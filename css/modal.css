@@ -11,7 +11,7 @@
 .modal_opened{
     display: flex;
 }
-.modal_body {
+.modal_body { /*закрывается модалка*/
     background-color: rgb(230,232,235);
     border-radius: 25px;
     color: black;
