@@ -332,8 +332,9 @@ text-align: left;
 .timetable-fligts td {
     padding: 15px;
 }
-.site-footer {
-    
+.cat img {
+    width: 200px;
+    height: 200px;
 }
 .site-footer {
     padding-top: 50px;
