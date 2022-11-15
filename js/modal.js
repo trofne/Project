@@ -13,12 +13,6 @@ closeBtn.addEventListener('click',()=>{
     modal.classList.remove('modal_opened') /*закрыть*/
 })
 
-
-
-
-
-
-
 function modal_opened(){
     alert("pressed")
 }

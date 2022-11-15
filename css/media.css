@@ -35,7 +35,7 @@
         width: 300px;
         height: auto;
     }
-    .site-header .about-us { /*надпись "Зоомаркет Степашка" подвинута влево*/
+    .site-header .about-us { /*надпись "Зооцентр Степашка" подвинута влево*/
         margin-left: -60px;
     }
     .timetable-fligts:first-child {
@@ -64,6 +64,10 @@
         width: 36px;
         cursor: pointer;
     } 
+    @media (max-width: 568px) {
+        .column-container .timetable-fligts:first-child{
+            flex-wrap: wrap;/*все контейнеры переносятся при сжатии*/
+        }
     /*добавляем гамбургер*/
     .toggle-btn > span, 
     .toggle-btn > span::before,
