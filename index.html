@@ -5,49 +5,67 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
-        <title>Space-Z</title>
+        <link rel="stylesheet" href="css/active.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <title>Proekt</title>
     </head>
     <body>
+        <div class="modal" id="modal">
+            <div class="wrapper modal_body">
+                <p><b>КАКИЕ ИНГРЕДИЕНТЫ ЛУЧШЕ?</b><br>
+                    Мы забраковали множество ингредиентов, что у нас остается? Вы хотите иметь хороший источник протеина, так что первый ингредиент, а то и второй, а может даже и третий - должны быть мукой из мяса бизона, лосося, индейки, курицы.... Как мы упоминали раньше, мясная мука - это мясо, из которого извлечена вода, в то время как несколько хитрых компаний ставят на первое место просто мясо, а за ним - зерно. Если это не мясная мука, это означает, что перед вами корм, в котором больше зерна, чем мяса. Как обычный человек может это понять? Чаще всего - никак. Вот таким образом компании кладут больше наполнителей, чем мяса и хорошо зарабатывают при этом.
+                    Некоторые корма не содержат зерна, но содержат протеина больше, чем нужно большинству собак, так что поговорим о зерне. Хорошие корма содержат в себе коричневый рис, овес, просо, ячмень. Белый рис неплох, он просто не является такой здоровой едой как коричневый, и лучше, если он будет подальше от первых позиций списка ингредиентов. Молотое зерно или мука из зерна - тоже нормально, но избегайте таких ингредиентов как пивной рис (brewer's rice) - это отходы пивного производства. Вам не нужны 3 формы риса в одном корме - это лишь рекламный ход. Подсластители тоже не нужны. Менадион (Menadione) это витамин, который хорошие компании убирают из своих формул, т.к. он может вызывать проблемы со здоровьем.
+                    Множество кормов для пожилых собак и собак с лишним весом изобилуют наполнителями под завязку. В случае с диетическими кормами организм собаки просто выводит с калом все, что не может переварить, без усвоения лишних питательных веществ и калорий. Лучше кормить хорошим кормом, но в меньших количествах, и добавлять низкокалорийные овощи, чтобы собака чувствовала себя сытой. Корма для пожилых собак пытаются дать собакам меньше калорий. Но если там одни наполнители - то за что же вы платите деньги? Чтобы ваша собака какала больше, чем ей на самом деле надо? У хороших производителей есть также корма для пожилых собак, и они лучше по качеству, но опять же, вам нужно читать этикетке, чтобы найти стоящий продукт.
+                </p>
+                <button class="btn close-modal">X</button>
+            </div>
+        </div>
         <header class="site-header">
             <div class="wrapper">
                 <nav class="main-nav">
                     <a href="/" class="logo">
-                        <img src="img/logo.png" alt="Space-Z">
-                    </a> 
+                        <img src="img/logo.png" alt="Proekt">
+                    </a>
+                    <input id="nav-toggle" class="hidden" type="checkbox"/>
+                    <label class="toggle-btn" for="nav-toggle">
+                        <span></span>
+                    </label> 
                     <ul class="site-menu">
                         <li><a href="#">Войти на сайт</a></li>
                         <li><a href="#">Регистрация</a></li>
                         <li><a href="#">Корзина</a></li>
                     </ul>
+                    
                     <ul class="contact-menu">
                         <li>
-                            <a href="mailto" class="icon icon-mail">
+                            <a href="mailto:trofne555@mail.ru" class="icon icon-mail">
                                 <span class="hidden">написать нам</span>
                             </a>
                         </li>
-                        <li> <a href="tel:" class="icon icon-phone">
+                        <li> 
+                            <a href="tel:111-11-11" class="icon icon-phone">
                             <span class="hidden">позвонить нам</span>
-                        </a>
-                    </li>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <section class="about-us">
                     <h1>
-                        Зоомаркет
+                        Зооцентр
                         Степашка 
                     </h1>
                     <p>
                         Интернет магазин для домашних животных. <br>
                         Лучшее вашим любимцам!  
                     </p>
-                    <a href="#vacation-request"class="btn btn-yellow">Каталог</a>
+                    <a href="#vacation-request"class="btn btn-yellow">Услуги</a>
                 </section>
             </div>
         </header>
         <main>
             <section class="advantage">
-                <h2 class="hidden">Наши приемущества</h2>
-
+                <h2 class="hidden">Наши преимущества</h2>
                 <div class="wrapper">
                     <ul class="advantage-list">
                         <li class="advantage-made">
@@ -90,7 +108,7 @@
                 </div>
                 <div class="wrapper column-container">
                     <div class="left-column">
-                        <h3>Центр ветеринарной офтальмологии и 
+                        <h3>Центры ветеринарной офтальмологии и 
                             стомотологии открылись в Санкт-Петербурге</h3>
                         <ul class="recomendation-list">
                             <li><strong>Ветеринарная медицина</strong> сегодня по многим показателям соответствует человеческой. Это касается и ветеринарной офтальмологии и стоматологии. Успешное лечение самых сложных заболеваний: например, катаракты путем <br> вживления искусственного хрусталика или дентальная имплантация, внедрение различных типов имплантатов. <br> Все это элементы современной практики ветврачей.
@@ -110,7 +128,7 @@
                 <div class="wrapper column-container">
                     <h2 class="hidden">Заявка</h2>
                     <div class="left-column">
-                        <h3 class="lead">Вы готовы записать <br> питомца на обследование?</h3>
+                        <h3 class="lead">Готовы записать<br> питомца на обследование?</h3>
                         <p>
                             Отправьте заявку, заполнив форму справа,<br>
                             мы свяжемся с вами в течении 2 часов. 
@@ -127,73 +145,75 @@
                                 <input type="tel" name="phone" id="phone"placeholder="Контактный телефон">
                             </div>
                             <div class="half-field">
-                                <label for="height" class="hidden">Рост</label>
-                                <input type="text" name="height" id="height"placeholder="Рост">
+                                <label for="height" class="hidden">Возраст животного</label>
+                                <input type="text" name="height" id="height"placeholder="Возраст животного">
                             </div>
                             <div class="half-field">
                                 <label for="weight" class="hidden">Вес</label>
                                 <input type="text" name="weight" id="weight"placeholder="Вес">
                             </div>
                             <div>
-                                <input class = "hidden" type="checkbox" name="agreement" id="agreement">
-                                <label for="agreement">Согласен(а) наобработку персональных данных</label>
+                                <input class = "hidden" type="checkbox" name="agreement" id="agreement" required>
+                                <label for="agreement">Согласен(а) на обработку персональных данных</label>
                             </div>
                             <div>
                                 <button type="submit" class="btn btn-black">ОТПРАВИТЬ</button>
                             </div>
                         </form>
-
                     </div>
                 </div>
             </section>
             <section class="timetable">
                 <div class="wrapper">
+                    <div class="cat">
+                        <img src="img/belaja-koshka.png" alt="кошка">
+                    </div>
                     <div class="timetable-info">
                         <h2>
-                            Наши услуги
+                            Услуги <br>Центра
                         </h2>
                         <p>
                             Для вашего удобства мы разработали график предоставления услуг в центре.
                             Вы также можете заказать <a href="#"target="_blank">здоровое питание для вашего любимца</a>.
                         </p>
                     </div>
+                    <table class="timetable-fligts">
+                        <thead>
+                            <tr>
+                                <th>Прием</th>
+                                <th>Название  отделения</th>
+                                <th>Прием</th>
+                                <th>Название отделения</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>с 9.00 до 21.00</td>
+                                <td>Офтальмологическое  обследование</td>
+                                <td>с 9.00  до 24.00</td>
+                                <td>Хирургическое лечение</td>
+                            </tr>
+                            <tr>
+                                <td>с 10.00 до 20.00</td>
+                                <td>Стоматология</td>
+                                <td>с 9.00 до 20.00</td>
+                                <td>Терапевтическое лечение</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <table class="timetable-fligts">
-                    <thead>
-                        <tr>
-                            <th>Прием</th>
-                            <th>Название  отделения</th>
-                            <th>Прием</th>
-                            <th>Название отделения</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>с 9.00 до 21.00</td>
-                            <td>Офтальмологическое  обследование</td>
-                            <td>с 9.00  до 24.00</td>
-                            <td>Хирургическое лечение</td>
-                        </tr>
-                        <tr>
-                            <td>с 10.00 до 20.00</td>
-                            <td>Стоматология</td>
-                            <td>с 9.00 до 20.00</td>
-                            <td>Терапевтическое лечение</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-     </main>
-        <footer class="site-footer">
-        <div class="wrapper footer-columns">
-            <div class="left-column">
-                <div class="logo-container">
-                    <a href="#"class="logo">
-                        <img src="img/img-logo1.png" alt="Space-Z">
-                    </a>
-                    <p class="company-title">Space-Z</p>
-                </div>
+            </section>
+            
+        </main>
+        <foo class="site-footer">
+            <div class="wrapper footer-columns">
+                <div class="left-column">
+                    <div class="logo-container">
+                        <a href="#"class="logo">
+                            <img src="img/img-logo1.png" alt="Proekt">
+                        </a>
+                        <p class="company-title">Proekt</p>
+                    </div>
                     <p class="copyright">
                         ООО “Степашка”<br>
                         Все права защищены.
@@ -217,7 +237,7 @@
                         </ul>
                     </nav>
                     <nav class="footer-menu">
-                        <a href="#"class="footer-submenu-title">КОНТАКТЫ</a>
+                        <a href="#" class="footer-submenu-title">КОНТАКТЫ</a>
                         <ul class="footer-submenu">
                             <li><a href="#">Отправить заявку</a></li>
                             <li><a href="#">Схема проезда</a></li>
@@ -226,6 +246,7 @@
                     </nav>
                 </div>
             </div>
-        </div>
+        </foo>
+        <script src="js/modal.js"></script>
     </body>
 </html>

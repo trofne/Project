@@ -1,18 +1,22 @@
 /*general */
+/* @import url(`https://fonts.googleapis.com/css2?family=Caveat&display=swar`); */
 * {
     margin: 0;
     padding: 0;
 }
+@font-fase {
+    font-family: Pang; /*имя шрифта*/
+    src: url("https://fonts/Pangolin-Regular.ttf"); /*путь к файлу со шрифтом*/
+}
 body {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #FFFFFF;
 }
 .wrapper {
-   /*width: 75%;*/
-    margin: 0 12.5%;
-   
+   width: 70%;
+    margin: 0 auto;
 }
 .hidden {
     position: absolute;
@@ -20,32 +24,31 @@ body {
     width: 0;
     height: 0;
     margin: -1px;
+    opacity: 0;
 }
 /*end general */
-
 
 .site-header {
     background: #9E3B3B;
 }
 .site-header .wrapper {
-    background-image: url(../img/cte.png);
+    background-image: url(../img/cte.png);/*можно убрать background и картинка при сжатии исчезнет - в мобильном приложении, т. к.background перересла в media*/
     background-repeat: no-repeat;
     background-position: right 167px;
         
-    padding-top: 85px;
-    padding-bottom: 170px;
+    padding-top: 54px;
+    padding-bottom: 180px;
 }
 .main-nav {
     display: flex;
-    margin-bottom: 110px;
+    margin-bottom: 115px;
 }
 .logo {
     margin-right: 102px;
-    
 }
 img {
-    width: 64px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
 }
 ul {
     list-style: none;
@@ -76,16 +79,14 @@ ul {
     display: block;
 }
 .contact-menu .icon-mail {
-    background: url("../img/icon-mail1.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    }
+    background: url("../img/icon-mail1.png") no-repeat;
+}
 .contact-menu .icon-phone {
-    background: url(../img/icon-phone1.png);
+    background: url(../img/icon-phone1.png) no-repeat;
 }
 /* end contact menu */
 .about-us {
-    width: 240px;
+    width: 244px;
     padding-left: 124px;
 }
 .about-us h1 {
@@ -93,9 +94,13 @@ ul {
     line-height: 54px;
     font-size: 45px;
     margin-bottom: 39px;
+    color: #FFF;
 }
 .about-us p {
     margin-bottom: 74px;
+}
+.about-us {
+    
 }
 .btn {
     display: inline-block;
@@ -116,7 +121,7 @@ ul {
     width: 19px;
     height: 16px;
     right: 13px;
-    background: url(../img/right-arrow-dark\ 1.jpg);
+    background: url(../img/right-arrow-dark\ 1.jpg) no-repeat;
     }
 .btn-yellow {
     background-color: #FFCB06;
@@ -134,6 +139,7 @@ ul {
 .advantage-list li {
     padding-top: 80px;
     width: 150px;
+    position: relative;
 }
 .advantage-list li::after {
     content: "";
@@ -141,17 +147,19 @@ ul {
     height: 65px;
 
     position: absolute;
+    top: 0;
+    left: 0;
 }
-.advantage-made {
+.advantage-made::after {
     background: url("../img/images1.png") no-repeat;
 }
-.advantage-food {
+.advantage-food::after {
     background: url("../img/images2.png") no-repeat;
 }
-.advantage-pilot {
+.advantage-pilot::after {
     background: url("../img/images3.png") no-repeat;
 }
-.advantage-rover {
+.advantage-rover::after {
     background: url("../img/images4.png") no-repeat;
 }
 .content {
@@ -170,19 +178,36 @@ ul {
 .content p {
     margin-top: 25px;
 }
-.lead {
-    font-family:'Inter';
+/*.lead {
+    font-family: 'Courier New', Courier, monospace;
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-}
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+}*/
 .content .lead {
     margin: 0 0 20px;
 }
-.recomendation-list li,.right-column {
-    padding: 25px 25px 0px 0px;
+.recomendation-list {
+    padding-top: 20px;
 }
+/*.recomendation-list li,.right-column {
+    padding: 25px 25px 0px 0px;
+}*/
+/*.recomendation-list li {
+    margin-bottom: 28px;
+    position: relative;
+}
+.recomendation-list li::before {
+    content: "";
+    background: #FFCB06;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: -23px;
+    top: 4px;
+}*/
 .content .wrapper:first-child {
     margin-bottom: 20px;
 }
@@ -205,7 +230,7 @@ ul {
     margin-bottom: 60px;
     padding-right: 160px;
 }
-.vacation-request p, .vacation-request .lead {
+.vacation-request p, /*.vacation-request .lead*/ {
     width: 340px;
 }
 .vacation-form  {
@@ -213,78 +238,160 @@ ul {
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 8px;
-    column-gap: 10px;
+    /*column-gap: 10px;*/
 }
 .vacation-form div {
     width: 100%;
 }
-.vacation-form input[type ="tel"],.vacation-form input[type ="text"] {
+.vacation-form input[type ="tel"], .vacation-form input[type ="text"] {
     box-sizing: border-box;
     width: 100%;
     padding: 17px 23px 17px 23px;
 }
-.vacation-form .half-field {
+.vacation-form .half-field {/*делим в форме рост и вес на половинки*/
     width: 49%;
 }
-.vacation-form input[type ="checkbox"] {
+.vacation-form input[type ="checkbox"] {/*оформляем галочку перед надлисью "согласене на обработку персональных данных*/
    position: absolute;
-   opacity: 0;
-   z-index: -1;
+   opacity: 0;/*скрыть*/
+   z-index: -1;/*сдвинуть на задний фон*/
 }
-.vacation-form input[type ="checkbox"] ~ label::before {   
-    content: "\2713";
+.vacation-form input[type ="checkbox"] ~ label::before { /*оформляем галочку перед надлисью "согласене на обработку персональных данных - по умолчанию, когда чикбокс выключен*/  
+    content: "\2713";/*css код галочки*/
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
     width: 25px;
     height: 25px;
-    
     color: #FFF;
-    font-weight: bold;
+    font-weight: bold; /*толщина галочки*/
     background: #FFFFFF;
-
     margin-right: 1em;
     border: 1px solid #FFF;
 }
-.vacation-form input[type ="checkbox"]:checked ~ label::before {
+.vacation-form input[type ="checkbox"]:checked ~ label::before {/*оформляем галочку перед надлисью "согласене на обработку персональных данных - когда чикбокс включен*/
     color: #000;
 }
 .btn-black {
     color: #FFFFFF;
-    background-color: #222222;
+    background: #222222;
+    margin-top: 40px;
 }
-.btn::after {
+.btn-black::after {
     background: url(../img/right-arrow-white\ 1.png) no repeat;
 }
-.timetable {
+/* end form */
+.timetable { /* оформление таблицы "Услуги центра"*/
     background-color: #9E3B3B;
     padding: 84px 0;
+    width: 100%;
 }
 .timetable-info {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 73px;
+    gap: 20px 40px;
 }
 .timetable-info h2 {
     color: #FECA30;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
+    /*font-weight: 400;*/
     font-size: 24px;
     line-height: 29px;
-    
 
-
-    
-
-
-
-
-
-
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 160px;
+ 
+    letter-spacing: 0em;
+    text-align: left;
 }
-/* end form */
+.timetable-info p {
+    margin-left: auto;
+    width: 440px;
+}
+.timetable-info a {
+    color: #FECA30;
+}
+.timetable-fligts {
+    width: 100%;
+    border-collapse: collapse;/*растянуть между строками и столбцами*/
+}
+.timetable-fligts tr {
+    border-bottom: 1px solid #555555;/*граница между строками - черта внизу*/
+}
+.timetable-fligts th { /*заголовочная часть таблицы-ячейкам*/
+    background: #000000;
+    text-align: left; /*выравниваем текст слева*/
+    padding: 15px;
+}
+.timetable-fligts td {
+    padding: 15px;
+}
+.cat img { /*добавила кошечку*/
+    width: 200px;
+    height: 200px;
+}
+.site-footer {
+    padding-top: 50px;/*отступ сверху*/
+    padding-bottom: 80px;/*отступ cнизу*/
+    margin: 100px;
+    color: #FFFFFF;
+    background-color: #131313;
+    }
+.footer-columns { /*колонки*/
+    display: flex;
+    justify-content: space-evenly; /*растягиваем с одинаковым отступом*/   
+}
+.footer-columns .left-column {
+    display: flex;
+    flex-direction: column;/*направление главной оси в колонку*/
+    width: 180px; /*общая ширина колонки*/
+    margin-right: 100px; /*отступ справа - до расстояния другого блока*/
+} 
+.footer-columns .left-column img {
+    width: 80px;
+    height: 80px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo-container .logo {
+    margin-right: 20px;
+}
+.copyright {/*надпись у логотипа*/
+    margin-top: auto;
+    color: #5C4343;
+}
+.footer-columns .right-column {
+    padding-top: 45px;
+    display: flex;
+    max-width: none;/*убираем максимальную ширину у правой колонки*/
+    column-gap: 80px;/*отступ между элементами колонок*/
+}
+.footer-menu {
+    width: 180px;
+}
+.footer-submenu-title {
+    display: block;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: #111111;
+    /*color: #F0F0F0;*/
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid #9E3B3B; /*нижнее подчеркивание слов в футере*/
+}
+.footer-submenu >li {
 
+    margin-bottom: 20px;
+}
+.footer-submenu a {
+    text-decoration: none;/*убираем нижнее подчеркивание*/
+    color: #888888;
+}
+/*.timetable-fligts{ /*шрифт в таблице курсив*
+    font-family: 'Caveat', cursive;
+}*/
