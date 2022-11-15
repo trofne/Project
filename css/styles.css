@@ -9,7 +9,7 @@
     src: url("https://fonts/Pangolin-Regular.ttf"); /*путь к файлу со шрифтом*/
 }
 body {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #FFFFFF;
@@ -27,7 +27,6 @@ body {
     opacity: 0;
 }
 /*end general */
-
 
 .site-header {
     background: #9E3B3B;
@@ -249,28 +248,28 @@ ul {
     width: 100%;
     padding: 17px 23px 17px 23px;
 }
-.vacation-form .half-field {
+.vacation-form .half-field {/*делим в форме рост и вес на половинки*/
     width: 49%;
 }
-.vacation-form input[type ="checkbox"] {
+.vacation-form input[type ="checkbox"] {/*оформляем галочку перед надлисью "согласене на обработку персональных данных*/
    position: absolute;
-   opacity: 0;
-   z-index: -1;
+   opacity: 0;/*скрыть*/
+   z-index: -1;/*сдвинуть на задний фон*/
 }
-.vacation-form input[type ="checkbox"] ~ label::before {   
-    content: "\2713";
+.vacation-form input[type ="checkbox"] ~ label::before { /*оформляем галочку перед надлисью "согласене на обработку персональных данных - по умолчанию, когда чикбокс выключен*/  
+    content: "\2713";/*css код галочки*/
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 25px;
     height: 25px;
     color: #FFF;
-    font-weight: bold;
+    font-weight: bold; /*толщина галочки*/
     background: #FFFFFF;
     margin-right: 1em;
     border: 1px solid #FFF;
 }
-.vacation-form input[type ="checkbox"]:checked ~ label::before {
+.vacation-form input[type ="checkbox"]:checked ~ label::before {/*оформляем галочку перед надлисью "согласене на обработку персональных данных - когда чикбокс включен*/
     color: #000;
 }
 .btn-black {
@@ -282,7 +281,7 @@ ul {
     background: url(../img/right-arrow-white\ 1.png) no repeat;
 }
 /* end form */
-.timetable {
+.timetable { /* оформление таблицы "Услуги центра"*/
     background-color: #9E3B3B;
     padding: 84px 0;
     width: 100%;
@@ -297,17 +296,15 @@ ul {
     color: #FECA30;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
+    /*font-weight: 400;*/
     font-size: 24px;
     line-height: 29px;
+
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 160px;
  
-
-
 letter-spacing: 0em;
 text-align: left;
-
 }
 .timetable-info p {
     margin-left: auto;
@@ -318,44 +315,44 @@ text-align: left;
 }
 .timetable-fligts {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse;/*растянуть между строками и столбцами*/
   
 }
 .timetable-fligts tr {
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #555555;/*граница между строками - черта внизу*/
 }
-.timetable-fligts th {
+.timetable-fligts th { /*заголовочная часть таблицы-ячейкам*/
     background: #000000;
-    text-align: left;
+    text-align: left; /*выравниваем текст слева*/
     padding: 15px;
 }
 .timetable-fligts td {
     padding: 15px;
 }
-.cat img {
+.cat img { /*добавила кошечку*/
     width: 200px;
     height: 200px;
 }
 .site-footer {
-    padding-top: 50px;
-    padding-bottom: 80px;
-    margin: 80px;
+    padding-top: 50px;/*отступ сверху*/
+    padding-bottom: 80px;/*отступ cнизу*/
+    margin: 100px;
     color: #FFFFFF;
     background-color: #131313;
     }
-.footer-columns {
+.footer-columns { /*колонки*/
     display: flex;
-    justify-content: space-evenly;    
+    justify-content: space-evenly; /*растягиваем с одинаковым отступом*/   
 }
 .footer-columns .left-column {
     display: flex;
-    flex-direction: column;
-    width: 180px;
-    margin-right: 100px;
+    flex-direction: column;/*направление главной оси в колонку*/
+    width: 180px; /*общая ширина колонки*/
+    margin-right: 100px; /*отступ справа - до расстояния другого блока*/
 } 
 .footer-columns .left-column img {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 }
 .logo-container {
     display: flex;
@@ -364,15 +361,15 @@ text-align: left;
 .logo-container .logo {
     margin-right: 20px;
 }
-.copyright {
+.copyright {/*надпись у логотипа*/
     margin-top: auto;
     color: #5C4343;
 }
 .footer-columns .right-column {
-    padding-top: 25px;
+    padding-top: 45px;
     display: flex;
-    max-width: none;
-    column-gap: 80px;
+    max-width: none;/*убираем максимальную ширину у правой колонки*/
+    column-gap: 80px;/*отступ между элементами колонок*/
 }
 .footer-menu {
     width: 180px;
@@ -389,10 +386,11 @@ text-align: left;
     border-bottom: 1px solid #9E3B3B; /*нижнее подчеркивание слов в футере*/
 }
 .footer-submenu >li {
+
     margin-bottom: 20px;
 }
 .footer-submenu a {
-    text-decoration: none;
+    text-decoration: none;/*убираем нижнее подчеркивание*/
     color: #888888;
 }
 /*.timetable-fligts{ /*шрифт в таблице курсив*
