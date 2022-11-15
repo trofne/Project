@@ -32,9 +32,9 @@ body {
     background: #9E3B3B;
 }
 .site-header .wrapper {
-    background-image: url(../img/cte.png);/*можно убрать background и картинка при сжатии исчезнет - в мобильном приложении, т. к.background перересла в media*/
+    /*background-image: url(../img/cte.png);/*можно убрать background и картинка при сжатии исчезнет - в мобильном приложении, т. к.background перересла в media
     background-repeat: no-repeat;
-    background-position: right 167px;
+    background-position: right 167px;*/
         
     padding-top: 54px;
     padding-bottom: 180px;
