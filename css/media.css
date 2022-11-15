@@ -1,113 +1,186 @@
-@media (min-width:1280px) { /*если убираем картинку с шапки в CSS 35пункт*/
+@media (min-width:1280px) {
+
+    /*если убираем картинку с шапки в CSS 35пункт*/
     .site-header .wrapper {
         background-image: url(../img/cte.png);
         background-repeat: no-repeat;
         background-position: right 167px;
-        }
-        .timetable-info h2 {
-            font-family: Pang;
-        }
+    }
+
+    .timetable-info h2 {
+        font-family: Pang;
+    }
 }
+
 @media (max-width:1024px) {
     .wrapper {
-        width: 85%;/*отступы по краям при сужении*/
-    } 
-    .content .column-container:first-child {/*псевдо класс*/
-        flex-direction:column; /*меняем направление главной оси - контейнеры в колонку*/
+        width: 85%;
+        /*отступы по краям при сужении*/
     }
+
+    .content .column-container:first-child {
+        /*псевдо класс*/
+        flex-direction: column;
+        /*меняем направление главной оси - контейнеры в колонку*/
+    }
+
     .content .column-container:first-child .right-column {
         max-width: none;
     }
 }
+
 @media (max-width: 960px) {
     .footer-columns .right-column {
-        column-gap: 20px;/*размер колонок уменьшается при сжатии*/
+        column-gap: 20px;
+        /*размер колонок уменьшается при сжатии*/
     }
+
     .vacation-request .column-container {
-        flex-wrap: wrap;/*перестроение левой надписи - над формой при сжатии*/
+        flex-wrap: wrap;
+        /*перестроение левой надписи - над формой при сжатии*/
     }
 }
+
 @media (max-width: 768px) {
     .column-container {
-        flex-wrap: wrap;/*все контейнеры переносятся при сжатии*/
+        flex-wrap: wrap;
+        /*все контейнеры переносятся при сжатии*/
     }
-    .content .left-column img {/*сжать карту*/
+
+    .content .left-column img {
+        /*сжать карту*/
         width: 300px;
         height: auto;
     }
-    .site-header .about-us { /*надпись "Зооцентр Степашка" подвинута влево*/
+
+    .site-header .about-us {
+        /*надпись "Зооцентр Степашка" подвинута влево*/
         margin-left: -60px;
     }
+
     .timetable-fligts:first-child {
         flex-direction: column-reverse;
     }
+
     .content .column-container:first-child {
-        flex-direction: column-reverse; /*при расширении экрана карта спускается ниже текста*/
+        flex-direction: column-reverse;
+        /*при расширении экрана карта спускается ниже текста*/
     }
+
     .footer-columns {
-        flex-direction: column-reverse;/*изменить направление главной оси*/
+        flex-direction: column-reverse;
+        /*изменить направление главной оси*/
     }
+
     .contact-menu {
         margin: 0;
         justify-content: center;
     }
-    .site-menu, .contact-menu {/*меняем кнопки меню на бутерброд,т.е.отключаем*/
+
+    .site-menu, .contact-menu {
+        /*меняем кнопки меню на бутерброд,т.е.отключаем*/
         visibility: hidden;
     }
+
     .main-nav {
         flex-direction: column;
     }
-    .toggle-btn  { /*стилизуем кнопку*/
+
+    .toggle-btn {
+        /*стилизуем кнопку*/
         position: absolute;
         right: 25%;
         top: 50px;
         width: 36px;
         cursor: pointer;
-    } 
-    @media (max-width: 568px) {
-        .column-container .timetable-fligts:first-child{
-            flex-wrap: wrap;/*все контейнеры переносятся при сжатии*/
-        }
+    }
+}
+
+@media (max-width: 568px) {
+
+    .table-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;/*коррекция поведения элемента при выходе за пределы*/
+        border: 1px solid #ddd;
+    }
+
+    .table-responsive>.table {
+        margin-bottom: 0;
+    }
+
+    .table-responsive>.table>thead>tr>th,
+    .table-responsive>.table>tbody>tr>th,
+    .table-responsive>.table>tfoot>tr>th,
+    .table-responsive>.table>thead>tr>td,
+    .table-responsive>.table>tbody>tr>td,
+    .table-responsive>.table>tfoot>tr>td {
+        white-space: nowrap; /*заполнение свободного пространства*/
+    }
+
     /*добавляем гамбургер*/
-    .toggle-btn > span, 
-    .toggle-btn > span::before,
-    .toggle-btn > span::after {
+    .toggle-btn>span,
+    .toggle-btn>span::before,
+    .toggle-btn>span::after {
         display: block;
         position: absolute;
-        
+
         width: 30px;
         height: 3px;
         background-color: #FFCB06;
     }
-    .toggle-btn > span::before {
+
+
+    .toggle-btn>span::before {
         content: '';
         top: -8px;
     }
-    .toggle-btn > span::after {
+
+    .toggle-btn>span::after {
         content: '';
         top: 8px;
     }
+
     /*конец добавления гамбургера*/
 
     /*cтилизуем бутербродик при открытии и закрытии*/
-    #nav-toggle:checked ~ .toggle-btn > span {
-        transform: rotate(45deg);/*переворачиваю палки*/
+    #nav-toggle:checked~.toggle-btn>span {
+        transform: rotate(45deg);
+        /*переворачиваю палки*/
     }
-    #nav-toggle:checked ~ .toggle-btn > span::before {
+
+    #nav-toggle:checked~.toggle-btn>span::before {
         top: 0;
         transform: rotate(0);
     }
-    #nav-toggle:checked ~ .toggle-btn > span::after {
+
+    #nav-toggle:checked~.toggle-btn>span::after {
         top: 0;
-        transform: rotate(90deg);/*переворачиваю палки*/
+        transform: rotate(90deg);
+        /*переворачиваю палки*/
     }
+
     /*стилизуем блок меню при открытии*/
-    #nav-toggle:checked ~ .site-menu {
+    #nav-toggle:checked~.site-menu {
         flex-direction: column;
         row-gap: 40px;
+        /* background-color: #ddd; */
         visibility: visible;
     }
-    #nav-toggle:checked ~ .contact-menu {
+
+    #nav-toggle:checked~.contact-menu {
         visibility: visible;
+    }
+
+    .site-menu li {
+        /* background-color: #ddd; */
+        /* font-size: 20px; */
+    }
+
+}
+
+@media (min-width:569px) {
+    .logo{
+        margin-right:102px;
     }
 }

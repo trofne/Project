@@ -43,8 +43,12 @@ body {
     display: flex;
     margin-bottom: 115px;
 }
-.logo {
-    margin-right: 102px;
+.logo img{
+    size: 32px;
+}
+.logo{
+    width:32px;
+    height:32px;
 }
 img {
     width: 70px;
