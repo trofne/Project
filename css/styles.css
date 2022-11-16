@@ -139,6 +139,8 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 50 px 80px;
+    
+    cursor: pointer;
 }
 .advantage-list li {
     padding-top: 80px;
