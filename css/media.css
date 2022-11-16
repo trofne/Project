@@ -42,6 +42,30 @@
 }
 
 @media (max-width: 768px) {
+    /*добавляем гамбургер*/
+    .toggle-btn>span,
+    .toggle-btn>span::before,
+    .toggle-btn>span::after {
+        display: block;
+        position: absolute;
+
+        width: 30px;
+        height: 3px;
+        background-color: #FFCB06;
+    }
+
+
+    .toggle-btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .toggle-btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    /*конец добавления гамбургера*/
     .column-container {
         flex-wrap: wrap;
         /*все контейнеры переносятся при сжатии*/
@@ -95,31 +119,29 @@
         cursor: pointer;
     }
 }
+@media (max-width: 568px) {
 
-    /*добавляем гамбургер*/
-    .toggle-btn>span,
-    .toggle-btn>span::before,
-    .toggle-btn>span::after {
-        display: block;
-        position: absolute;
-
-        width: 30px;
-        height: 3px;
-        background-color: #FFCB06;
+    .table-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;/*коррекция поведения элемента при выходе за пределы*/
+        border: 1px solid #ddd;
     }
 
-
-    .toggle-btn>span::before {
-        content: '';
-        top: -8px;
+    .table-responsive .table {
+        margin-bottom: 0;
     }
 
-    .toggle-btn>span::after {
-        content: '';
-        top: 8px;
+    .table-responsive>.table>thead>tr>th,
+    .table-responsive>.table>tbody>tr>th,
+    .table-responsive>.table>tfoot>tr>th,
+    .table-responsive>.table>thead>tr>td,
+    .table-responsive>.table>tbody>tr>td,
+    .table-responsive>.table>tfoot>tr>td {
+        white-space: nowrap; /*заполнение свободного пространства*/
     }
-
-    /*конец добавления гамбургера*/
+}
+    
 
     /*cтилизуем бутербродик при открытии и закрытии*/
     #nav-toggle:checked~.toggle-btn>span {
@@ -153,29 +175,6 @@
     .site-menu li {
         /* background-color: #ddd; */
         /* font-size: 20px; */
-    }
-
-
-@media (max-width: 568px) {
-
-    .table-responsive {
-        width: 100%;
-        margin-bottom: 15px;
-        overflow-y: hidden;/*коррекция поведения элемента при выходе за пределы*/
-        border: 1px solid #ddd;
-    }
-
-    .table-responsive .table {
-        margin-bottom: 0;
-    }
-
-    .table-responsive>.table>thead>tr>th,
-    .table-responsive>.table>tbody>tr>th,
-    .table-responsive>.table>tfoot>tr>th,
-    .table-responsive>.table>thead>tr>td,
-    .table-responsive>.table>tbody>tr>td,
-    .table-responsive>.table>tfoot>tr>td {
-        white-space: nowrap; /*заполнение свободного пространства*/
     }
 @media (min-width:569px) {
     .logo{
