@@ -339,8 +339,8 @@ ul {
     height: 200px;
 }
 .site-footer {
-    padding-top: 50px;/*отступ сверху*/
-    padding-bottom: 80px;/*отступ cнизу*/
+    padding-top: 500px;/*отступ сверху*/
+    padding-bottom: 200px;/*отступ cнизу*/
     margin: 100px;
     color: #FFFFFF;
     background-color: #131313;
@@ -356,9 +356,8 @@ ul {
     margin-right: 100px; /*отступ справа - до расстояния другого блока*/
 } 
 .footer-columns .left-column img {
-    width: 70px;
-    height: 70px;
-    padding-top:65px;
+    width: 0px;
+    height: 0px;
 }
 .logo-container {
     display: flex;
@@ -399,11 +398,11 @@ ul {
     text-decoration: none;/*убираем нижнее подчеркивание*/
     color: #888888;
 }
-.footer .logo img {
+/*.footer .logo img {
     display: block;
     max-width: 100%;
-    height: auto;
-}
+    height: none;
+}*/
 /*.timetable-fligts{ /*шрифт в таблице курсив*
     font-family: 'Caveat', cursive;
 }*/

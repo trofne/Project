@@ -176,8 +176,8 @@
         /* background-color: #ddd; */
         /* font-size: 20px; */
     }
-@media (min-width:569px) {
-    .logo{
+    @media (min-width:569px) {
+    .logo {
         margin-right:102px;
-    }
+    }    
 }
