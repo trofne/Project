@@ -356,8 +356,9 @@ ul {
     margin-right: 100px; /*отступ справа - до расстояния другого блока*/
 } 
 .footer-columns .left-column img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+    padding-top:65px;
 }
 .logo-container {
     display: flex;
@@ -397,6 +398,11 @@ ul {
 .footer-submenu a {
     text-decoration: none;/*убираем нижнее подчеркивание*/
     color: #888888;
+}
+.footer .logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /*.timetable-fligts{ /*шрифт в таблице курсив*
     font-family: 'Caveat', cursive;
